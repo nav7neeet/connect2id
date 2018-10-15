@@ -1,0 +1,643 @@
+{
+	"info": {
+		"name": "oauth",
+		"_postman_id": "7f084f90-e61b-ec01-7162-969a9f116080",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/c2id/clients",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ztucZS1ZyFKgh0tUEruUtiSTXhnexmd6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"application_type\"                : \"web\",\r\n  \"redirect_uris\"                   : [ \"https://client.example.org/callback\",\r\n                                        \"https://client.example.org/callback2\" ],\r\n  \"client_name\"                     : \"My Cool App\",\r\n  \"logo_uri\"                        : \"https://client.example.org/logo.png\",\r\n  \"token_endpoint_auth_method\"      : \"client_secret_basic\",\r\n  \"contacts\"                        : [ \"admin@example.org\" ]\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/clients",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"clients"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "4c16f11a-4272-42eb-8c49-862a60a9f8b6",
+					"name": "http://127.0.0.1:8080/c2id/clients",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"application_type\"                : \"web\",\r\n  \"redirect_uris\"                   : [ \"https://client.example.org/callback\",\r\n                                        \"https://client.example.org/callback2\" ],\r\n  \"client_name\"                     : \"My Cool App\",\r\n  \"logo_uri\"                        : \"https://client.example.org/logo.png\",\r\n  \"token_endpoint_auth_method\"      : \"client_secret_basic\",\r\n  \"contacts\"                        : [ \"admin@example.org\" ]\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/c2id/clients",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"c2id",
+								"clients"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "779",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Oct 2018 12:39:08 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [],
+					"responseTime": 441,
+					"body": "{\"grant_types\":[\"authorization_code\"],\"subject_type\":\"public\",\"application_type\":\"web\",\"logo_uri\":\"https:\\/\\/client.example.org\\/logo.png\",\"registration_client_uri\":\"http:\\/\\/127.0.0.1:8080\\/c2id\\/clients\\/hziek4y7j4orc\",\"redirect_uris\":[\"https:\\/\\/client.example.org\\/callback\",\"https:\\/\\/client.example.org\\/callback2\"],\"registration_access_token\":\"Flc6pfWcwuC0FFSV3bWawliHkhzsPk6VcsJ749TOcn0.Kg\",\"token_endpoint_auth_method\":\"client_secret_basic\",\"client_id\":\"hziek4y7j4orc\",\"client_secret_expires_at\":0,\"client_id_issued_at\":1539607147,\"client_secret\":\"tDMsRebpwrcabYanwawvLeydQVqnT-i7C-Q-qSl-PjE\",\"tls_client_certificate_bound_access_tokens\":false,\"client_name\":\"My Cool App\",\"contacts\":[\"admin@example.org\"],\"response_types\":[\"code\"],\"id_token_signed_response_alg\":\"RS256\"}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ztucZS1ZyFKgh0tUEruUtiSTXhnexmd6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/clients/zffz6enc5dmoo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"clients",
+						"zffz6enc5dmoo"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "7b9eb462-a05b-42cc-9b2e-2d8adb1a0f4c",
+					"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"c2id",
+								"clients",
+								"hziek4y7j4orc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "779",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Oct 2018 12:43:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [],
+					"responseTime": 117,
+					"body": "{\"grant_types\":[\"authorization_code\"],\"subject_type\":\"public\",\"application_type\":\"web\",\"logo_uri\":\"https:\\/\\/client.example.org\\/logo.png\",\"registration_client_uri\":\"http:\\/\\/127.0.0.1:8080\\/c2id\\/clients\\/hziek4y7j4orc\",\"redirect_uris\":[\"https:\\/\\/client.example.org\\/callback\",\"https:\\/\\/client.example.org\\/callback2\"],\"registration_access_token\":\"Flc6pfWcwuC0FFSV3bWawliHkhzsPk6VcsJ749TOcn0.Kg\",\"token_endpoint_auth_method\":\"client_secret_basic\",\"client_id\":\"hziek4y7j4orc\",\"client_secret_expires_at\":0,\"client_id_issued_at\":1539607147,\"client_secret\":\"tDMsRebpwrcabYanwawvLeydQVqnT-i7C-Q-qSl-PjE\",\"tls_client_certificate_bound_access_tokens\":false,\"client_name\":\"My Cool App\",\"contacts\":[\"admin@example.org\"],\"response_types\":[\"code\"],\"id_token_signed_response_alg\":\"RS256\"}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"client_id\":\"zffz6enc5dmoo\",\r\n\t\"token_endpoint_auth_method\"      : \"none\",\r\n  \"application_type\"                : \"web\",\r\n  \"redirect_uris\"                   : [ \"https://client.example.org/callback\",\r\n                                        \"https://client.example.org/callback2\" ],\r\n  \"client_name\"                     : \"My Cool App\",\r\n  \"logo_uri\"                        : \"https://client.example.org/logo.png\",\r\n  \"contacts\"                        : [ \"admin@example.org\" ]\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/clients/zffz6enc5dmoo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"clients",
+						"zffz6enc5dmoo"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "d070f91a-46f9-42b0-8417-6f41131a7d46",
+					"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"c2id",
+								"clients",
+								"hziek4y7j4orc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "779",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Oct 2018 12:43:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [],
+					"responseTime": 117,
+					"body": "{\"grant_types\":[\"authorization_code\"],\"subject_type\":\"public\",\"application_type\":\"web\",\"logo_uri\":\"https:\\/\\/client.example.org\\/logo.png\",\"registration_client_uri\":\"http:\\/\\/127.0.0.1:8080\\/c2id\\/clients\\/hziek4y7j4orc\",\"redirect_uris\":[\"https:\\/\\/client.example.org\\/callback\",\"https:\\/\\/client.example.org\\/callback2\"],\"registration_access_token\":\"Flc6pfWcwuC0FFSV3bWawliHkhzsPk6VcsJ749TOcn0.Kg\",\"token_endpoint_auth_method\":\"client_secret_basic\",\"client_id\":\"hziek4y7j4orc\",\"client_secret_expires_at\":0,\"client_id_issued_at\":1539607147,\"client_secret\":\"tDMsRebpwrcabYanwawvLeydQVqnT-i7C-Q-qSl-PjE\",\"tls_client_certificate_bound_access_tokens\":false,\"client_name\":\"My Cool App\",\"contacts\":[\"admin@example.org\"],\"response_types\":[\"code\"],\"id_token_signed_response_alg\":\"RS256\"}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"clients",
+						"hziek4y7j4orc"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "12839f9f-401b-43dd-84a2-e1b2c852f77e",
+					"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"c2id",
+								"clients",
+								"hziek4y7j4orc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "779",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Oct 2018 12:43:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [],
+					"responseTime": 117,
+					"body": "{\"grant_types\":[\"authorization_code\"],\"subject_type\":\"public\",\"application_type\":\"web\",\"logo_uri\":\"https:\\/\\/client.example.org\\/logo.png\",\"registration_client_uri\":\"http:\\/\\/127.0.0.1:8080\\/c2id\\/clients\\/hziek4y7j4orc\",\"redirect_uris\":[\"https:\\/\\/client.example.org\\/callback\",\"https:\\/\\/client.example.org\\/callback2\"],\"registration_access_token\":\"Flc6pfWcwuC0FFSV3bWawliHkhzsPk6VcsJ749TOcn0.Kg\",\"token_endpoint_auth_method\":\"client_secret_basic\",\"client_id\":\"hziek4y7j4orc\",\"client_secret_expires_at\":0,\"client_id_issued_at\":1539607147,\"client_secret\":\"tDMsRebpwrcabYanwawvLeydQVqnT-i7C-Q-qSl-PjE\",\"tls_client_certificate_bound_access_tokens\":false,\"client_name\":\"My Cool App\",\"contacts\":[\"admin@example.org\"],\"response_types\":[\"code\"],\"id_token_signed_response_alg\":\"RS256\"}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id-login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id-login?response_type=code\n &scope=openid%20email\n &client_id=zffz6enc5dmoo&state=af0ifjsldkj&redirect_uri=https://client.example.org/callback",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id-login"
+					],
+					"query": [
+						{
+							"key": "response_type",
+							"value": "code\n ",
+							"equals": true
+						},
+						{
+							"key": "scope",
+							"value": "openid%20email\n ",
+							"equals": true
+						},
+						{
+							"key": "client_id",
+							"value": "zffz6enc5dmoo",
+							"equals": true
+						},
+						{
+							"key": "state",
+							"value": "af0ifjsldkj",
+							"equals": true
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://client.example.org/callback",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "code",
+							"value": "95LriB4F2qFLH7Qc3lxCIQ.smrupJh_ZWHfY-T-z7mz-A",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://client.example.org/callback",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "client_id",
+							"value": "zffz6enc5dmoo",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"token"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/token/introspect",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/token/introspect",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"token",
+						"introspect"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/token/revoke",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/token/revoke",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"token",
+						"revoke"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/userinfo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJraWQiOiJDWHVwIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJhbGljZSIsInNjcCI6WyJvcGVuaWQiXSwiaXNzIjoiaHR0cDpcL1wvMTI3LjAuMC4xOjgwODBcL2MyaWQiLCJleHAiOjE1Mzk2MTEzODIsImlhdCI6MTUzOTYxMDc4MiwidWlwIjp7Imdyb3VwcyI6WyJhZG1pbiIsImF1ZGl0Il19LCJqdGkiOiIwUGppSFVFcFlVMCIsImNpZCI6InpmZno2ZW5jNWRtb28ifQ.SZNm7CVbtQ-YvPKkf924aW7ceCkKvRCZi5U7P0AXir6nytEao__eDkCuXVrWP9gETZLYxQFPANY7Hvqhboaq1ZLFEVdN4G4fbT3uqFLxk8hpZJMyqLHHHrmw0wAQq1oEi_Edu6GyGjjFAjs1LwXDqnpBwczW1KWDlIbQ7U6Wu1eIBhlOHdsCNRjEU7nnyNyYhI9u_FuwpIn0HgRC6ZtaUNqUxWbmbzXniX12SCUoUEMOsTurveI1ko6L854jwF96nHR2sz2aCsr0NQyeikY6XsnlgsSL8Gyn16_COVQllDhhX7IsXhJsf3VXtT45CpvbYNEhOiPZa25blEwX3Nps_g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/userinfo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"userinfo"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "ztucZS1ZyFKgh0tUEruUtiSTXhnexmd6",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a711aba7-4dae-42eb-8b70-6be2fbb5e563",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "fe23bc62-564e-4033-a88f-1adc51b453e0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
