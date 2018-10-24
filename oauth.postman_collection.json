@@ -49,7 +49,7 @@
 			},
 			"response": [
 				{
-					"id": "4c16f11a-4272-42eb-8c49-862a60a9f8b6",
+					"id": "a0cd118a-d5ca-46b6-9937-592784d9f46e",
 					"name": "http://127.0.0.1:8080/c2id/clients",
 					"originalRequest": {
 						"method": "POST",
@@ -158,7 +158,7 @@
 			},
 			"response": [
 				{
-					"id": "7b9eb462-a05b-42cc-9b2e-2d8adb1a0f4c",
+					"id": "18bd76f9-75ba-4476-8df1-f16978390bf2",
 					"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
 					"originalRequest": {
 						"method": "GET",
@@ -257,7 +257,7 @@
 			},
 			"response": [
 				{
-					"id": "d070f91a-46f9-42b0-8417-6f41131a7d46",
+					"id": "95944141-e60c-4840-a579-ddeb2760ce36",
 					"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
 					"originalRequest": {
 						"method": "GET",
@@ -348,7 +348,7 @@
 			},
 			"response": [
 				{
-					"id": "12839f9f-401b-43dd-84a2-e1b2c852f77e",
+					"id": "0f1f3790-d441-44cf-a56f-87c42ac87bcc",
 					"name": "http://127.0.0.1:8080/c2id/clients/hziek4y7j4orc",
 					"originalRequest": {
 						"method": "GET",
@@ -601,6 +601,114 @@
 					"path": [
 						"c2id",
 						"userinfo"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/authz-sessions/rest/v3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\" : \"response_type=code&scope=openid%2020email&client_id=zffz6enc5dmoo&state=af0ifjsldkj&redirect_uri=https://client.example.org/callback\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/authz-sessions/rest/v3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"authz-sessions",
+						"rest",
+						"v3"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/authz-sessions/rest/v3 copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sub\" : \"alices\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/authz-sessions/rest/v3/7ClpzfIse1f3pACctM_tMAFj_cI2MaxPufWNDAGHraE",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"authz-sessions",
+						"rest",
+						"v3",
+						"7ClpzfIse1f3pACctM_tMAFj_cI2MaxPufWNDAGHraE"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/c2id/authz-sessions/rest/v3 copy copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sub\" : \"alices\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/c2id/authz-sessions/rest/v3/7ClpzfIse1f3pACctM_tMAFj_cI2MaxPufWNDAGHraE",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"c2id",
+						"authz-sessions",
+						"rest",
+						"v3",
+						"7ClpzfIse1f3pACctM_tMAFj_cI2MaxPufWNDAGHraE"
 					]
 				},
 				"description": ""
